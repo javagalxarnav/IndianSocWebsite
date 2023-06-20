@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "IndianSocWebsite",
+			"path": "."
+		},
+		{
+			"name": "Indian Soc",
+			"path": "../../University of Sheffield/Indian Soc"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "IndianSocWebsite"
+	}
+}
