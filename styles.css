@@ -201,21 +201,23 @@
 /* Main Content CSS */
 .main {
   background-color: #141414;
+  width: 100%;
+  height: 100%;
 }
 
 .main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
   justify-self: center;
+  text-align: center;
   margin: 0 auto;
-  height: 90vh;
+  height: 40vh;
   background-color: #131313;
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .main__content {
@@ -274,7 +276,7 @@
 }
 
 .main__btn:after {
-  position: absolute;
+  position: relative;
   content: '';
   top: 0;
   left: 0;
@@ -360,9 +362,11 @@
   background: #131313;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  width : 100%;
+  margin-bottom: 50px;
 }
 
 .services h1 {
@@ -389,7 +393,46 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
 }
+
+.services__column {
+  margin : 30px;
+  padding: 20px;
+  flex : 1;
+  position:relative;
+  color : #fff;
+}
+
+.services__column h2 {
+  position: relative;
+  font-size: 3rem;
+}
+
+.services__column p {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.services__section {
+  position: relative;
+  font-size: 2rem;
+  margin: 50px;
+  padding: 20px;
+  color: #fff;
+}
+.services__section h2 {
+  color: #ff8177;
+  position: relative;
+  font-size: 3rem;
+}
+
+.services__section p {
+  position: relative;
+  font-size: 1.5rem;
+}
+
 
 .services__card {
   margin: 1rem;
@@ -426,6 +469,11 @@
   left: 30px;
 }
 
+.services__card ul {
+  postion: absolute;
+  list-style: none;
+}
+
 .services__card p {
   position: absolute;
   top: 400px;
@@ -455,6 +503,8 @@
   cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 960px) {
   .services {
     height: 1600px;
@@ -465,6 +515,7 @@
     margin-top: 12rem;
   }
 }
+
 
 @media screen and (max-width: 480px) {
   .services {
