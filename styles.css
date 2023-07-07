@@ -433,7 +433,6 @@
   font-size: 1.5rem;
 }
 
-
 .services__card {
   margin: 1rem;
   height: 525px;
@@ -501,6 +500,28 @@
   transform: scale(1.075);
   transition: 0.2s ease-in;
   cursor: pointer;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  text-align: center;
+  margin: 10px;
+}
+
+.image img {
+  border-radius: 20%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.caption {
+  margin-top:  5px;
+  color: #fff;
 }
 
 
